@@ -37,6 +37,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   my_new_project:
-    Snowflake
-    example:
-      +materialized: table
+    Snowflake:
+        +materialized: table
+    Multi_Table:
+        +materialized: table
+        Seeds:
+          +schema:emp.csv
