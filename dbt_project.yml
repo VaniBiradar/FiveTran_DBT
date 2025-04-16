@@ -41,3 +41,5 @@ models:
         +materialized: table
     Multi_Table:
         +materialized: table
+        Seeds:
+          +schema:emp.csv
